@@ -1,0 +1,39 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: mybatch",
+            "command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\Tools\\VsDevCmd.bat",
+            "args": [
+                "&",
+                "cl.exe",
+                //"/Zi",
+                "/EHsc",
+                "/Fe:",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "${file}",
+                "&",
+                "del",
+                "*.obj",
+                //"*.exe",
+                //"*.pdb",
+                //"run\\*.pdb",
+                //"*.ilk",
+                //"run\\*.ilk",
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}",
+                //"cwd": "${fileDirname}",
+            },
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "compiler: MSVC"
+        }
+    ]
+}
