@@ -11,7 +11,7 @@
                 //"/Zi",
                 "/EHsc",
                 "/Fe:",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "${fileDirname}\\run\\${fileBasenameNoExtension}.exe",
                 "${file}",
                 "&",
                 "del",
